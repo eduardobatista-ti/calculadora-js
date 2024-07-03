@@ -1,25 +1,33 @@
-//função para jogar numeros na tela
+//jogar valores na tela
 
 function insert(num){
-    var numero = document.getElementById('resultado').innerHTML;
+    var numero = document.getElementById('resultado').innerHTML
     document.getElementById('resultado').innerHTML = numero + num;
+
 }
 
-//função clear
+/*
+
+if(resultado != ""){
+    document.getElementById('resultado-null').innerHTML = ""
+} else {
+    document.getElementById('resultado-null').innerHTML = "0"
+} */
+
+//limpar conteudo
 
 function limpar(){
     document.getElementById('resultado').innerHTML = "";
 }
 
-//função backspace
+//apagar
 
 function apagar(){
     var apaga = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = apaga.substring(0, apaga.length -1);
 }
 
-//função calcular  
-
+//clacular
 function calculo(){
     var resultado = document.getElementById('resultado').innerHTML;
 
@@ -29,8 +37,3 @@ function calculo(){
         document.getElementById('resultado').innerHTML = "";
     }
 };
-
-//capturar url
-
-var url_atual = window.location.href;
-console.log(url_atual);

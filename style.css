@@ -1,49 +1,67 @@
-body {
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
     font-family: sans-serif;
-    background-color: black;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+}
+
+h1{
+    text-align: center;
     color: white;
-}
-
-.calculadora{
-    background-color: aliceblue;
-    color: black;
-    position: absolute;
-    padding: 15px;
-    border-radius: 0px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.resultado{
-    background-color: rgb(214, 214, 214);
-    color: #000;
-    font-size: 40px;
-    height: 50px;
-    line-height: 50px;
-    margin: 5px 0;
-    text-align: end;
 }
 
 P{
-    margin: 0;
+    color: white;
+    text-align: right;
+    font-size: 40px;
 }
 
+.resultado{
+    height: 80px;
+    line-height: 80px;
+}
+
+
 .btn{
-    background-color: #000;
+    background-color: rgb(80, 72, 58);
+    font-size: 22px;
     color: white;
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+    border-radius: 100%;
     cursor: pointer;
-    padding: 30px;
-    font-size: 25px;
-    height: 100%;
-    width: 100%;
-    border: none;
 }
 
 .btn:hover{
-    background-color: grey;
+    background-color: rgb(48, 48, 48);
+}
+
+.btn-0{
+    text-align: left;
+    padding-left: 20px; 
+    width: 96%;
+    border-radius: 30px;
+}
+
+.btn-l{
+    background-color: orange;
 }
 
 .btn-b{
-    background-color: rgb(185, 121, 0);
+    background-color: rgb(214, 214, 214);
+    color: black;
+}
+
+.container{
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
 }
